@@ -26,6 +26,6 @@ public class AppController {
         boolean isUserAdded = userService.add(newUser);
         notificationService.notificationMessage("User", "sing up", isUserAdded);
         if (isUserAdded) setCurrentUser(newUser);
-        return isUserAdded ? true : false;
+        return isUserAdded;
     }
 }

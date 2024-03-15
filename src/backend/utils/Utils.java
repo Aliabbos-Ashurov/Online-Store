@@ -1,10 +1,7 @@
 package backend.utils;
 
-import backend.model.order.Order;
-import backend.model.product.Product;
-
 import java.util.*;
-
+import static backend.service.notification.NotificationServiceImpl.*;
 /**
  * @author Aliabbos Ashurov
  * Date: 23/February/2024  19:08
@@ -18,6 +15,7 @@ public interface Utils {
         for (int i = 0; i < list.size(); i++) {
             System.out.println(((i + 1) +" "+list.get(i)));
         }
+        System.out.println(ANSI_GREEN + "----------------------------" + ANSI_RESET);
     }
     static boolean checkDataForNotNull(List<?> list) {
         return list != null && !list.isEmpty();

@@ -12,9 +12,9 @@ import java.util.Objects;
  * Date: 23/February/2024  18:24
  **/
 public class NotificationServiceImpl implements NotificationService {
-    private static final String ANSI_GREEN = "\u001B[32m";
-    private static final String ANSI_RED = "\u001B[31m";
-    private static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_RESET = "\u001B[0m";
 
     @Override
     public void checkData(List<?> list) {
